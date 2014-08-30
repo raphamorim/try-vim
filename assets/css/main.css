@@ -133,15 +133,39 @@ nav {
     padding: 15px;
     width: 100%;
     height: 400px;
+    transition: all 300ms ease;
 }
+
 .bash .comment { color: #5c98cd; }
 
 .vim {
+    background-color: #2A3C4F;
     position: relative;
+    cursor: default;
     padding: 5px 15px;
     font-family: Helvetica;
     letter-spacing: .04em;
+    color: #F8F8F8;
+    width: 100%;
 }
+
+.cursor {
+    position: relative;
+    width: 8px;
+    height: 20px;
+    background-color: #F0CB04;
+    -moz-animation: blink normal 1.8s infinite;
+    -webkit-animation: blink normal 1.8s infinite;
+    -ms-animation: blink normal 1.8s infinite;
+    animation: blink normal 1.8s infinite;
+    float: left;
+    z-index: 2;
+}
+
+@-moz-keyframes blink {0%{opacity:0;} 100%{opacity:1;}} /* Firefox */
+@-webkit-keyframes blink {0%{opacity:0;} 100%{opacity:1;}} /* Webkit */
+@-ms-keyframes blink {0%{opacity:0;} 100%{opacity:1;}} /* IE */
+@keyframes blink {0%{opacity:0;} 100%{opacity:1;}}
 
 /* Footer */
 
@@ -157,7 +181,6 @@ footer a {
     color: rgba(0,0,0,.5);
 }
 
-
 /* Aditional Propeties */
 
 .center {
@@ -170,4 +193,8 @@ footer a {
 
 .consola {
     font-family: consola;
+}
+
+.focus {
+    background-color: rgba(0,0,0,.1);
 }
