@@ -149,18 +149,29 @@ nav {
     width: 100%;
 }
 
+.item {
+    text-align: center;
+    font-size: 13px;
+    float: left;
+    font-family: Menlo, Helvetica;
+    width: 10.5px;
+    height: 19px;
+    font-weight: 100;
+    padding: 3px 0px;
+}
+
 .cursor {
     position: relative;
-    width: 8px;
-    height: 20px;
+    height: 19px;
     background-color: #F0CB04;
-    -moz-animation: blink normal 1.8s infinite;
+    width: 8px;
+    /* -moz-animation: blink normal 1.8s infinite;
     -webkit-animation: blink normal 1.8s infinite;
     -ms-animation: blink normal 1.8s infinite;
-    animation: blink normal 1.8s infinite;
-    float: left;
+    animation: blink normal 1.8s infinite; */
     z-index: 2;
 }
+
 
 @-moz-keyframes blink {0%{opacity:0;} 100%{opacity:1;}} /* Firefox */
 @-webkit-keyframes blink {0%{opacity:0;} 100%{opacity:1;}} /* Webkit */
