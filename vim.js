@@ -2,8 +2,26 @@
 
 var cli = document.querySelector('.vim')
 	, status = null
-	, bash = document.querySelector('.bash')
-	, cursor = document.querySelector('.cursor');
+	, bash = document.querySelector('.bash');
+
+var data = "/* This is a single-line comment */Hi fellas, welcome to the Learn Vim :)";
+
+window.onload = function() {
+	var arrData = data.split('');
+	arrData.forEach(function(entry) {
+		var item = document.createElement('div');
+		item.className = 'item';
+		item.innerHTML = entry;
+		// item.style.float = "left";
+		// item.style.padding = "1px";
+		//
+		// 	item.style.width = "10px";
+
+		bash.appendChild(item);
+	});
+
+	bash.children[0].classList.add('cursor');
+}
 
 /* Display alert if user try left page */
 window.onbeforeunload = function() {
@@ -11,17 +29,14 @@ window.onbeforeunload = function() {
         " will be lost.";
 };
 
-/* keyboard bind */
+/* Keyboard */
 document.addEventListener('keydown', function(event) {
     if ((status === 'cli') && (event.keyCode != 27))
         return cli.value = cli.value + String.fromCharCode(event.keyCode);
 
-    switch (event.keyCode) {
-    	// Key: Right Arrow
-    	case 39:
-            // Do Something :)
-            break;
+	Cursor(event.keyCode);
 
+    switch (event.keyCode) {
         // Key: I
         case 73:
             cli.value = ' -- INSERT -- ',
@@ -37,7 +52,7 @@ document.addEventListener('keydown', function(event) {
             break;
 
         // Key: Escape
-	case 27:
+		case 27:
             cli.value = null,
             status = null;
             bash.classList.remove('focus');
@@ -53,4 +68,27 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+/* Cursor Function */
+function Cursor (key) {
+	var cursor = document.querySelector('.cursor'),
+		nextE = cursor.nextSibling,
+		prevE = cursor.previousSibling;
 
+	switch (key) {
+		// Key: Right Arrow
+		case 39:
+			if (nextE.classList.contains('item')) {
+				cursor.classList.remove('cursor');
+				nextE.classList.add('cursor');
+			}
+			break;
+
+		// Key: Left Arrow
+		case 37:
+			if (prevE.classList.contains('item')) {
+				cursor.classList.remove('cursor');
+				prevE.classList.add('cursor');
+			}
+			break;
+	}
+}
