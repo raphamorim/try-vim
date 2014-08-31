@@ -4,7 +4,7 @@ var cli = document.querySelector('.vim')
 	, status = null
 	, bash = document.querySelector('.bash');
 
-var data = "/* This is a single-line comment */Hi fellas, welcome to the Learn Vim :)";
+var data = "#Try Vim ##Let's learn this thing together Hi fellas, welcome to the Learn Vim :)";
 
 window.onload = function() {
 	var arrData = data.split('');
