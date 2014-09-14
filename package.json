@@ -1,0 +1,26 @@
+{
+  "name": "try-vim",
+  "version": "0.1.0",
+  "description": "Learn vim's shortcut in less than 30 minutes.",
+  "main": "app.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raphamorim/try-vim.git"
+  },
+  "author": "Raphael Amorim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raphamorim/try-vim/issues"
+  },
+  "homepage": "https://github.com/raphamorim/try-vim",
+  "dependencies": {
+    "ejs": "~0.8.5",
+    "express": "~4.0.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}

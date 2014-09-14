@@ -1,0 +1,51 @@
+                <li class="green"></li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vim Academy - <%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Learn vim's shortcut in less than 30 minutes">
+    <meta name="author" content="Raphael Amorim">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/base.css">
+
+    <!-- Favicon -->
+    <link rel='shortcut icon' href='images/favicon.ico' />
+</head>
+<body>
+    <nav>
+        <div class="content">
+            <h1 class="center"><span class="mask consola">>_</span><span class="mask">learn</span> Vim</h1>
+        </div>
+    </nav>
+
+    <div class="terminal">
+        <div id="data"><%= data %></div>
+        <div class="tab">
+            <ul class="btn">
+                <li class="red"></li>
+                <li class="yellow"></li>
+                <li class="green"></li>
+            </ul>
+        </div>
+
+        <div class="bash"></div>
+
+        <input class="vim" disabled/>
+    </div>
+
+    <div class="arrow left"><</div>
+    <div class="arrow right">></div>
+
+    <footer class="center">
+        <p>Made with ♥ by <a href="http://github.com/raphamorim">Raphamorim</a>.</p>
+        <p>Color Scheme powered by <a href="http://github.com/raphamorim/lucario">Lucario</a>
+    </footer>
+
+    <script src="../vim.js"></script>
+</body>
+</html>
