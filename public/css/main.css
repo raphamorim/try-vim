@@ -10,6 +10,34 @@ body {
     width: 820px;
     margin: 0 auto;
 }
+.logo {
+	width: 100%;
+	font-size: 30px;
+	line-height: 2.2em;
+	padding: 5px;
+	clear: both;
+}
+
+.logo>img {
+	float: left;
+	height: 90px;
+}
+
+.logo>a>img {
+	font-size: 20px;
+	margin-top: 6px;
+	float: right;
+	height: 60px;
+	width: 60px;
+	fill: #555 !important;
+	transition: all 200ms ease;
+}
+
+.logo>a>img:hover {
+	margin-top: 0px;
+	width: 70px;
+	height: 70px;
+}
 
 header {
 	position: absolute;
@@ -50,31 +78,31 @@ section {
 
 .column.blue {
 	background-color: #2DC8AA;
-	-webkit-animation: fade 5s infinite; /* Safari 4+ */
-  	-moz-animation:    fade 5s infinite; /* Fx 5+ */
-  	-o-animation:      fade 5s infinite; /* Opera 12+ */
-  	animation:         fade 5s infinite; /* IE 10+, Fx 29+ */
-}
-.column.red {
-	background-color: #4DA9E5;
 	-webkit-animation: fade 4s infinite; /* Safari 4+ */
   	-moz-animation:    fade 4s infinite; /* Fx 5+ */
   	-o-animation:      fade 4s infinite; /* Opera 12+ */
   	animation:         fade 4s infinite; /* IE 10+, Fx 29+ */
 }
-.column.green {
-	background-color: #AC6DC7;
+.column.red {
+	background-color: #4DA9E5;
 	-webkit-animation: fade 6s infinite; /* Safari 4+ */
   	-moz-animation:    fade 6s infinite; /* Fx 5+ */
   	-o-animation:      fade 6s infinite; /* Opera 12+ */
   	animation:         fade 6s infinite; /* IE 10+, Fx 29+ */
 }
+.column.green {
+	background-color: #AC6DC7;
+	-webkit-animation: fade 8s infinite; /* Safari 4+ */
+  	-moz-animation:    fade 8s infinite; /* Fx 5+ */
+  	-o-animation:      fade 8s infinite; /* Opera 12+ */
+  	animation:         fade 8s infinite; /* IE 10+, Fx 29+ */
+}
 .column.purple {
 	background-color: #EA5C46;
-	-webkit-animation: fade 3s infinite; /* Safari 4+ */
-  	-moz-animation:    fade 3s infinite; /* Fx 5+ */
-  	-o-animation:      fade 3s infinite; /* Opera 12+ */
-  	animation:         fade 3s infinite; /* IE 10+, Fx 29+ */
+	-webkit-animation: fade 10s infinite; /* Safari 4+ */
+  	-moz-animation:    fade 10s infinite; /* Fx 5+ */
+  	-o-animation:      fade 10s infinite; /* Opera 12+ */
+  	animation:         fade 10s infinite; /* IE 10+, Fx 29+ */
 }
 
 /* Fade Animation */
