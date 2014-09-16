@@ -1,7 +1,7 @@
 {
   "name": "try-vim",
   "version": "0.1.0",
-  "description": "Learn vim's shortcut in less than 30 minutes.",
+  "description": "Learn vim's shortcut in less than 10 minutes.",
   "main": "app.js",
   "scripts": {
     "test": "make test"

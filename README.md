@@ -1,3 +1,3 @@
-# Vim Academy
+# Try Vim
 
-> Learn vim's shortcut in less than 30 minutes.
+> Learn vim's shortcut in less than 10 minutes.
