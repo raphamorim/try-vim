@@ -1,13 +1,17 @@
 body {
-    background: #E06663;
-    height: 100%;
-    color: #FFF;
+    background: #334960;
     font-family: 'Open Sans', Helvetica, arial;
+    color: #F8F8F8;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
 h1 {
-    margin-top: 12px;
-    font-size: 40px;
+    margin-top: -3px;
+    font-size: 30px;
 }
 
 nav {
@@ -15,9 +19,11 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
-    background: #1AAF5C;
-    border-bottom: 4px solid rgba(0,0,0,.3);
+    height: 60px;
+    color: #555;
+    background: #FFF;
+    /*border-bottom: 2px solid rgba(0,0,0,.8);*/
+    box-shadow: 0 0 10px solid black;
 }
 
 .content {
@@ -54,6 +60,7 @@ nav {
 /* Terminal */
 
 .terminal {
+
     position: relative;
     width: 820px;
     height: 460px;
@@ -68,7 +75,7 @@ nav {
     position: relative;
     background-color: #D7D7D7;
     width: 100%;
-    height: 30px;
+    height: 25px;
 }
 
 .btn {
@@ -78,9 +85,9 @@ nav {
 .btn>li {
     display: inline;
     margin: 5px 4px;
-    width: 20px;
+    width: 15px;
     float: left;
-    height: 20px;
+    height: 15px;
     border-radius: 50%;
 }
 .btn>li.red { background-color: #C1321E; }
@@ -91,7 +98,7 @@ nav {
     position: relative;
     padding: 15px;
     width: 100%;
-    height: 400px;
+    height: 368px;
     transition: all 300ms ease;
 }
 
@@ -102,10 +109,12 @@ nav {
     position: relative;
     cursor: default;
     padding: 5px 15px;
-    font-family: Helvetica;
+    font-family: 'Open Sans', Helvetica;
     letter-spacing: .04em;
+    font-size: 20px;
     color: #F8F8F8;
     width: 100%;
+    border: 0px;
 }
 
 .item {
@@ -140,33 +149,7 @@ nav {
 @-ms-keyframes blink {0%{opacity:0;} 100%{opacity:1;}} /* IE */
 @keyframes blink {0%{opacity:0;} 100%{opacity:1;}}
 
-/* Footer */
-
-footer {
-    position: relative;
-    width: 820px;
-    margin: 0 auto;
-    margin-top: 20px;
-    font-size: 18px;
-}
-
-footer a {
-    color: rgba(0,0,0,.5);
-}
-
 /* Aditional Propeties */
-
-.center {
-    text-align: center;
-}
-
-.mask {
-    color: rgba(0,0,0,.4);
-}
-
-.consola {
-    font-family: consola;
-}
 
 .focus {
     background-color: rgba(0,0,0,.1);
